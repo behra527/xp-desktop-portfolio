@@ -1,0 +1,25 @@
+(function () {
+  const svg = {
+    computer: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="4" width="26" height="18" rx="2" fill="#e9f2fb" stroke="#2456a6" stroke-width="1.4"/><rect x="5.2" y="6.2" width="21.6" height="12.2" rx="1" fill="#3a8eef"/><path d="M7 15.5c2.2-2.4 4.2-1.2 6.2.2 1.6 1.1 2.6.4 4.2-.8 1.8-1.4 3.4-1 6.4 1.6v1.7H7z" fill="#7dca57"/><rect x="11" y="23" width="10" height="2" rx=".5" fill="#c5d0de"/><rect x="8" y="25" width="16" height="2.2" rx="1" fill="#8ea0b8"/></svg>',
+    user: '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#d7e7f8" stroke="#2456a6" stroke-width="1.2"/><circle cx="16" cy="12.5" r="4.2" fill="#f3c7a6"/><path d="M7.5 24.5c1.6-4 4.6-5.8 8.5-5.8s6.9 1.8 8.5 5.8" fill="#3a7ad8"/><circle cx="16" cy="12.2" r="1.7" fill="#1d1d1d" opacity=".15"/></svg>',
+    resume: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3.5h11l6 6V28a1.5 1.5 0 0 1-1.5 1.5h-15.5A1.5 1.5 0 0 1 6.5 28V5A1.5 1.5 0 0 1 8 3.5z" fill="#fff" stroke="#2456a6" stroke-width="1.3"/><path d="M19 3.8V10h6.2" fill="#d5e6fb" stroke="#2456a6" stroke-width="1.1"/><path d="M10 15h12M10 19h12M10 23h8" stroke="#5b7eab" stroke-width="1.3" stroke-linecap="round"/></svg>',
+    folder: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9.5A2 2 0 0 1 5 7.5h7l2.2 2.4H27a2 2 0 0 1 2 2V25a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5z" fill="#f6d56a" stroke="#c49214" stroke-width="1.2"/><path d="M3 13h26v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V13z" fill="#ffe9a3" stroke="#c49214" stroke-width="1.1"/></svg>',
+    github: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="6" fill="#24292f"/><path fill="#fff" d="M16 7.2a8.2 8.2 0 0 0-2.6 16c.4.1.5-.2.5-.4v-1.5c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.5 7.5 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.5.8 1.2.8 2.1 0 3-1.9 3.7-3.6 3.9.3.3.6.8.6 1.5v2.2c0 .2.1.5.6.4A8.2 8.2 0 0 0 16 7.2z"/></svg>',
+    skills: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="1.5" fill="#3a8eef" stroke="#1d4e9b"/><rect x="18" y="4" width="10" height="10" rx="1.5" fill="#f0c43a" stroke="#a67c10"/><rect x="4" y="18" width="10" height="10" rx="1.5" fill="#5cbe45" stroke="#2d7a28"/><rect x="18" y="18" width="10" height="10" rx="1.5" fill="#e15b4a" stroke="#9c2e22"/></svg>',
+    cert: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="17" rx="1.5" fill="#fff" stroke="#2456a6" stroke-width="1.2"/><path d="M8 10h16M8 14h12" stroke="#7aa0cc" stroke-width="1.3" stroke-linecap="round"/><circle cx="16" cy="22" r="4.2" fill="#f2c14d" stroke="#b8860b"/><path d="M14.2 26.2 13 30l3-1.4L19 30l-1.2-3.8" fill="#e7b23a"/></svg>',
+    mail: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="18" rx="2" fill="#e8f2ff" stroke="#2456a6" stroke-width="1.3"/><path d="M4 8.5 16 17 28 8.5" fill="none" stroke="#3a7ad8" stroke-width="1.6"/></svg>',
+    recycle: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 12h14l-2.2-3.2" fill="none" stroke="#2f8f3a" stroke-width="2" stroke-linecap="round"/><path d="M22 12l-2.4 2.2" fill="none" stroke="#2f8f3a" stroke-width="2" stroke-linecap="round"/><path d="M20 22H8l2.4 3.2" fill="none" stroke="#2f8f3a" stroke-width="2" stroke-linecap="round"/><path d="M8 22l2.2-2.4" fill="none" stroke="#2f8f3a" stroke-width="2" stroke-linecap="round"/><path d="M11 16l8 6" fill="none" stroke="#2f8f3a" stroke-width="2" stroke-linecap="round"/><rect x="10" y="24" width="12" height="3.2" rx="1" fill="#8d98a6"/></svg>',
+    terminal: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="2" fill="#0c0c0c" stroke="#3a3a3a"/><path d="M7 12l5 4-5 4" fill="none" stroke="#3dde5a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 20h8" stroke="#3dde5a" stroke-width="1.7" stroke-linecap="round"/></svg>',
+    assistant: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="7" width="20" height="15" rx="3" fill="#e8f3ff" stroke="#2456a6" stroke-width="1.3"/><circle cx="12.5" cy="14" r="1.5" fill="#245edb"/><circle cx="19.5" cy="14" r="1.5" fill="#245edb"/><path d="M12 18.2h8" stroke="#245edb" stroke-width="1.3" stroke-linecap="round"/><path d="M16 7V4" stroke="#2456a6" stroke-width="1.4" stroke-linecap="round"/><circle cx="16" cy="3.2" r="1.2" fill="#f0c43a"/><path d="M10 22.5 8 27h16l-2-4.5" fill="#d7e4f5" stroke="#2456a6"/></svg>',
+    info: '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="#3a8eef" stroke="#1d4e9b"/><rect x="14.6" y="13" width="2.8" height="9" rx="1" fill="#fff"/><circle cx="16" cy="10" r="1.6" fill="#fff"/></svg>'
+  };
+
+  function el(name) {
+    const wrap = document.createElement("span");
+    wrap.className = "ico";
+    wrap.innerHTML = svg[name] || svg.folder;
+    return wrap;
+  }
+
+  window.XPIcons = { el: el };
+})();
