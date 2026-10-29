@@ -1,26 +1,5 @@
 # Muhammad Behram Hassan  XP Desktop Portfolio
 
-<p align="center">
-  <img src="assets/favicon.svg" alt="XP Desktop Portfolio Logo" width="100" />
-</p>
-
-<h3 align="center">An Interactive Windows XP-Inspired Portfolio</h3>
-
-<p align="center">
-  A nostalgic desktop experience showcasing my resume, AI engineering expertise, projects, technical skills, and professional journey.
-</p>
-
-<p align="center">
-  <a href="https://github.com/YOUR_USERNAME/xp-desktop-portfolio">
-    <img src="https://img.shields.io/github/stars/YOUR_USERNAME/xp-desktop-portfolio?style=social" alt="GitHub Stars" />
-  </a>
-  <a href="https://github.com/YOUR_USERNAME/xp-desktop-portfolio/network/members">
-    <img src="https://img.shields.io/github/forks/YOUR_USERNAME/xp-desktop-portfolio?style=social" alt="GitHub Forks" />
-  </a>
-  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Project Status" />
-</p>
-
----
 
 ## Overview
 
