@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Behram Hassan — Software Engineer, AI Engineer, and Machine Learning Engineer. Interactive Windows XP-inspired resume and portfolio.">
+  <meta name="keywords" content="Muhammad Behram Hassan, AI Engineer, Machine Learning, Computer Vision, NLP, Software Engineer, GIFT University, Gujranwala">
+  <meta name="author" content="Muhammad Behram Hassan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#245edb">
+  <meta property="og:title" content="Muhammad Behram Hassan — AI Engineer Portfolio">
+  <meta property="og:description" content="Explore an interactive Windows XP-inspired desktop resume covering experience, projects, skills, and certifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://behra527.github.io/portfolio">
+  <title>Muhammad Behram Hassan — AI Engineer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#startBtn">Skip to Start menu</a>
+
+  <div id="os" class="os">
+    <div class="wallpaper" aria-hidden="true"></div>
+
+    <header class="mobile-bar">
+      <p class="mobile-name">Muhammad Behram Hassan</p>
+      <p class="mobile-role">Software Engineer · AI Engineer</p>
+    </header>
+
+    <div id="iconLayer" class="icon-layer" role="list" aria-label="Desktop shortcuts"></div>
+    <div id="windowLayer" class="window-layer"></div>
+
+    <aside id="welcome" class="balloon" hidden role="status" aria-live="polite"></aside>
+
+    <nav id="startMenu" class="start-menu" hidden aria-label="Start menu"></nav>
+    <div id="calendarPop" class="calendar" hidden role="dialog" aria-label="Calendar"></div>
+
+    <footer class="taskbar">
+      <button type="button" id="startBtn" class="start-btn" aria-haspopup="true" aria-expanded="false" aria-controls="startMenu">
+        <span class="start-logo" aria-hidden="true">
+          <svg viewBox="0 0 20 20" width="18" height="18">
+            <path fill="#f25022" d="M1 1h8.2v8.2H1z"/>
+            <path fill="#7fba00" d="M10.8 1H19v8.2h-8.2z"/>
+            <path fill="#00a4ef" d="M1 10.8h8.2V19H1z"/>
+            <path fill="#ffb900" d="M10.8 10.8H19V19h-8.2z"/>
+          </svg>
+        </span>
+        <span class="start-label">start</span>
+      </button>
+
+      <div class="quick-launch" aria-label="Quick launch">
+        <button type="button" id="showDesktop" class="quick-btn" title="Show desktop" aria-label="Show desktop">
+          <span class="show-desk-icon" aria-hidden="true"></span>
+        </button>
+        <button type="button" id="quickTerminal" class="quick-btn" title="Command Prompt" aria-label="Open Command Prompt">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect width="16" height="16" rx="1" fill="#111"/><path d="M3 4.5 6.5 8 3 11.5M8 11.5h5" stroke="#3dde5a" stroke-width="1.4" fill="none"/></svg>
+        </button>
+        <button type="button" id="quickAssistant" class="quick-btn" title="Behram AI Assistant" aria-label="Open Behram AI Assistant">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="2" y="3" width="12" height="8" rx="1.5" fill="#dceeff" stroke="#1d4e9b"/><circle cx="6" cy="7" r=".9" fill="#245edb"/><circle cx="10" cy="7" r=".9" fill="#245edb"/></svg>
+        </button>
+      </div>
+
+      <div id="taskbarApps" class="taskbar-apps" aria-label="Open applications"></div>
+
+      <div class="tray">
+        <button type="button" id="clockBtn" class="clock-btn" aria-label="Open calendar">
+          <span class="clock-time">12:00 PM</span>
+        </button>
+        <button type="button" class="desk-strip" id="showDesktopEdge" title="Show desktop" aria-label="Show desktop">
+          <span></span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <article id="printSheet" class="print-sheet" aria-hidden="true"></article>
+
+  <noscript>
+    <div class="noscript">
+      <h1>Muhammad Behram Hassan</h1>
+      <p>Software Engineer | AI Engineer | Machine Learning Engineer</p>
+      <p>Gujranwala, Punjab, Pakistan</p>
+      <p><a href="mailto:muhammadbehramhassan@gmail.com">muhammadbehramhassan@gmail.com</a></p>
+      <p><a href="https://github.com/behra527">GitHub</a> · <a href="https://www.linkedin.com/in/muhammadbehramhassan/">LinkedIn</a></p>
+      <p><a href="CV.pdf">Download resume (PDF)</a></p>
+      <p>Enable JavaScript to use the interactive desktop portfolio.</p>
+    </div>
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/dom.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/wm.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
